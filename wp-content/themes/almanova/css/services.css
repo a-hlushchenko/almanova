@@ -1,0 +1,12 @@
+.services .text {
+  text-align: start;
+}
+
+.services-wrapper {
+  padding-top: 100px;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("../svg/services-bg.svg");
+  background-size: 500px;
+}

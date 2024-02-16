@@ -1,0 +1,167 @@
+.area-buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.area-wrapper {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: url("../svg/home-about-bg.svg");
+}
+
+.area {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.services-list {
+  display: flex;
+  gap: 30px;
+}
+
+.services-item {
+  width: 100%;
+}
+
+.services-item:hover .text.default {
+  display: none;
+}
+
+.services-item:hover {
+  background-color: var(--blue);
+}
+
+.services-item:hover .title,
+.services-item:hover .text {
+  color: #fff;
+}
+
+.services-item:hover .services-item-stick {
+  background-color: #fff;
+}
+
+.services-item:hover > img {
+  height: 20px;
+}
+
+.advantage-item {
+  max-width: 100%;
+}
+
+.pre {
+  white-space: pre-wrap;
+}
+
+.subservice-wrapper {
+  background-color: #eff4f8;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+
+.subservice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.subservice {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ced8e1;
+}
+
+.subservice:last-child {
+  border-bottom: none;
+}
+
+.subservice-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.subservice-title {
+  color: var(--blue);
+  font-family: Roboto Slab, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 130%;
+}
+
+.subservice-subtitle {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.mains {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .area,
+  .services-list {
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .subservice {
+    gap: 15px;
+  }
+
+  .subservice-subtitle {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .subservice-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .area,
+  .services-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-big {
+    font-size: 24px;
+  }
+
+  .area {
+    padding-bottom: 50px;
+  }
+
+  .subservice {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .subservice-list {
+    gap: 30px;
+  }
+}

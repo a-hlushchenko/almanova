@@ -1,0 +1,33 @@
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.news-wrapper {
+  padding-top: 60px;
+  background-image: url("../svg/services-bg.svg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+@media (max-width: 1024px) {
+  .news-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-item,
+  .news-item > img {
+    max-width: none;
+    max-height: none;
+  }
+}

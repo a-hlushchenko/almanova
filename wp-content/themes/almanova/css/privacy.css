@@ -1,0 +1,21 @@
+.privacy-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 50px 10px 0;
+}
+
+.privacy-wrapper .text {
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .title-big {
+    font-size: 24px;
+  }
+}
